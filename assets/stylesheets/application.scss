@@ -2,9 +2,18 @@ body {
   font-family: Helvetica;
 }
 
-#root {
-  height: 100vh;
+.flat-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+ }
+
+ .flat {
+  flex: 50% 0 0;
+  cursor: pointer;
+  border: 6px solid transparent;
+ }
+
+.flat-selected {
+  border: 6px red dashed;
 }
+ @import "card";
